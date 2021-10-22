@@ -3,4 +3,6 @@
     <string name="app_name">Directorio UCN</string>
     <string name="acra_dialog_title">Se ha caido !!</string>
     <string name="acra_dialog_comment">Lo siento, la aplicacion se ha caido. Porfavor envie un reporte</string>
+    <string name="app_title">@string/app_name</string>
+    <string name="app_subtitle">Universidad Católica del Norte</string>
 </resources>
