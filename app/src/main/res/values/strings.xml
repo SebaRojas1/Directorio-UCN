@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Directorio UCN</string>
+    <string name="acra_dialog_title">Crash !!</string>
+    <string name="acra_dialog_comment">Sorry, the application crashed.  \nPlease send a
+        report</string>
+</resources>

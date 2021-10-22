@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Directorio UCN</string>
+    <string name="acra_dialog_title">Se ha caido !!</string>
+    <string name="acra_dialog_comment">Lo siento, la aplicacion se ha caido. Porfavor envie un reporte</string>
+</resources>
