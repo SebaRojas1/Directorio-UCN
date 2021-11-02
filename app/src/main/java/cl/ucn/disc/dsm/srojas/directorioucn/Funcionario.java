@@ -18,23 +18,49 @@
  */
 package cl.ucn.disc.dsm.srojas.directorioucn;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.ViewModelProvider;
-
-import android.os.Bundle;
+import lombok.Builder;
+import lombok.Getter;
 
 /**
+ * The UCN functionary.
+ *
  * @author Sebastián Rojas.
  */
-public class MainActivity extends AppCompatActivity {
+@Builder
+public final class Funcionario {
 
-    /**
-     *
-     * @param savedInstanceState the state
-     */
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    //The ID.
+    @Getter
+    private final Integer id;
+
+    //The name.
+    @Getter
+    private final String nombre;
+
+    //The occupation.
+    @Getter
+    private final String cargo;
+
+    //The unity.
+    @Getter
+    private final String unidad;
+
+    //The email.
+    @Getter
+    private final String email;
+
+    //The telephone number.
+    @Getter
+    private final String telefono;
+
+    //The office.
+    @Getter
+    private final String oficina;
+
+    //The direction.
+    @Getter
+    private final String direccion;
+
+    public Funcionario() {
     }
 }
