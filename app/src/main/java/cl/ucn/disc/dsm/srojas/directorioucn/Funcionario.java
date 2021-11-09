@@ -61,6 +61,70 @@ public final class Funcionario {
     @Getter
     private final String direccion;
 
-    public Funcionario() {
+
+    public static FuncionarioBuilder builder() {
+        return new FuncionarioBuilder();
+    }
+
+    public static class FuncionarioBuilder {
+        private Integer id;
+        private String nombre;
+        private String cargo;
+        private String unidad;
+        private String email;
+        private String telefono;
+        private String oficina;
+        private String direccion;
+
+        FuncionarioBuilder() {
+        }
+
+        public FuncionarioBuilder id(Integer id) {
+            this.id = id;
+            return this;
+        }
+
+        public FuncionarioBuilder nombre(String nombre) {
+            this.nombre = nombre;
+            return this;
+        }
+
+        public FuncionarioBuilder cargo(String cargo) {
+            this.cargo = cargo;
+            return this;
+        }
+
+        public FuncionarioBuilder unidad(String unidad) {
+            this.unidad = unidad;
+            return this;
+        }
+
+        public FuncionarioBuilder email(String email) {
+            this.email = email;
+            return this;
+        }
+
+        public FuncionarioBuilder telefono(String telefono) {
+            this.telefono = telefono;
+            return this;
+        }
+
+        public FuncionarioBuilder oficina(String oficina) {
+            this.oficina = oficina;
+            return this;
+        }
+
+        public FuncionarioBuilder direccion(String direccion) {
+            this.direccion = direccion;
+            return this;
+        }
+
+        //public Funcionario build() {
+        //    return new Funcionario(id, nombre, cargo, unidad, email, telefono, oficina, direccion);
+        //}
+
+        public String toString() {
+            return "Funcionario.FuncionarioBuilder(id=" + this.id + ", nombre=" + this.nombre + ", cargo=" + this.cargo + ", unidad=" + this.unidad + ", email=" + this.email + ", telefono=" + this.telefono + ", oficina=" + this.oficina + ", direccion=" + this.direccion + ")";
+        }
     }
 }

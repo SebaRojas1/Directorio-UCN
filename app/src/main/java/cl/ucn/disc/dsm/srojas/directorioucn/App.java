@@ -21,6 +21,8 @@ package cl.ucn.disc.dsm.srojas.directorioucn;
 import android.app.Application;
 import android.content.Context;
 
+import androidx.appcompat.app.AppCompatDelegate;
+
 import org.acra.ACRA;
 import org.acra.BuildConfig;
 import org.acra.annotation.AcraCore;
@@ -65,6 +67,9 @@ public class App extends Application {
 
 
         // The following line triggers the initialization of ACRA
-        ACRA.init(this);
+        ACRA.init(this, builder);
+
+        // Force night mode
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_AUTO_BATTERY);
     }
 }
